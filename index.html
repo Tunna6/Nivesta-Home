@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivesta Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Menü kısmı başlangıç-->
+
+  <nav id="navbar" class="w-100  d-flex justify-content-between align-items-center p-2 sticky-top bg-light ">
+
+    <!-- sidebar başlangıç -->
+
+    <div class="sidebar">
+      <div class="logo-content">
+        <div class="logo gap-4">
+          <img src="./css/img/Original_edited (1).webp" width="25%" alt="">
+          <div class="logo-name">Nivesta</div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+      </div>
+
+      <ul class="nav-list">
+        <li>
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="Search...">
+          <span class="toooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-home'></i>
+            <span class="links-name">Anasayfa</span>
+          </a>
+          <span class="toooltip">Anasayfa</span>
+        </li>
+        <li>
+          <a href="./pikeTakımlari.html">
+            <i class='bx bxs-dashboard'></i>
+            <span class="links-name">Pike Takımları</span>
+          </a>
+          <span class="toooltip">Pike Takımları</span>
+        </li>
+        <li>
+          <a href="./nevresimTakimlari.html">
+            <i class='bx bxs-dashboard'></i>
+            <span class="links-name">Nevresim Takımları</span>
+          </a>
+          <span class="toooltip">Nevresim Takımları</span>
+        </li>
+        <li>
+          <a href="./favoriler.html">
+            <i class="fa-solid fa-heart"></i>
+            <span class="links-name">Favoriler</span>
+          </a>
+          <span class="toooltip">Favoriler</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-truck"></i>
+            <span class="links-name">Sipariş Takibi</span>
+          </a>
+          <span class="toooltip">Sipariş Takibi</span>
+        </li>
+        <li>
+          <a href="./hakkında.html">
+            <i class="fa-solid fa-circle-info"></i>
+            <span class="links-name">Hakkımızda</span>
+          </a>
+          <span class="toooltip">Hakkımızda</span>
+        </li>
+        <li>
+          <a href="./iletişim.html">
+            <i class='bx bxs-contact'></i>
+            <span class="links-name">İletişim</span>
+          </a>
+          <span class="toooltip">İletişim</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="links-name">Kullanıcı</span>
+          </a>
+          <span class="toooltip">Kullanıcı</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- sidebar bitiş -->
+
+
+
+    <div id="logo" class="">
+      <img src="./css/img/Original_edited.webp" width="170px" height="70px" alt="">
+    </div>
+
+    <div id="ikili" class="d-flex gap-4">
+      <!-- <div class="search">
+        <input placeholder="Search..." type="text">
+        <button type="submit">Go</button>
+      </div> -->
+      <div class="iconlar d-flex  align-items-center fs-4 gap-5 p-2">
+        <i class="fa-brands fa-facebook fa-lg"></i>
+       <a href="https://www.instagram.com/nivesta.tr/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="./sepet.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+      </div>
+
+      <div id="buton">
+        <i class="fa-solid fa-globe fs-4 ms-2"></i>
+        <select name="" id="" class="bg-transparent border-0 py-2 fs-4">
+          <option value="">TR</option>
+          <option value="">İNG</option>
+        </select>
+      </div>
+    </div>
+
+  </nav>
+  <header id="header" class="w-100 bg-secondary  align-items-center">
+    <div class="container1 text-center">
+
+      <P class="">75 TL ÜZERİ ÜCRETSİZ KARGO</P>
+
+    </div>
+
+  </header>
+
+  <!-- Menü kısmı bitiş-->
+
+
+
+  <div class="slider">
+    <div class="slide active">
+      <div class="inner">
+        <p>Waffle Pike Takımı</p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="inner">
+        <p>Saray Çift Kişilik Nevresim Takımı
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="inner">
+        <p>Latanya Çift Kişilik Nevresim Takımı
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="inner">
+        <p>Nilüfer Çift Kişilik Nevresim Takımı
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="inner">
+        <p>Rose Çift Kişilik Pike Takımı</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="indicators">
+    <button id="prev"><i class="fas fa-angle-left"></i></button>
+    <button id="next"><i class="fas fa-angle-right"></i></button>
+  </div>
+
+  <script src="https://kit.fontawesome.com/f478418874.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
