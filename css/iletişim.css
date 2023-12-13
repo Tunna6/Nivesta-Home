@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(https://st3.depositphotos.com/11601342/19116/v/950/depositphotos_191160894-stock-illustration-vector-communication-pattern-communication-seamless.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background-color: #1d1b31;
+}
+main div i {
+    color: #fff;
+}
+main div p {
+    color: #fff;
+}
+
+section{
+    background-color: #1d1b31;
+}
+
+section label {
+    color: #fff;
+}
+
 button:focus {
     outline: 0;
 }

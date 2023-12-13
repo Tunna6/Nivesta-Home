@@ -26,26 +26,26 @@ document.addEventListener('DOMContentLoaded', () => {
         showCart();
     }
 
-    // Sepeti gösterme
-    function showCart() {
-        cart.innerHTML = '';
-        let totalPrice = 0;
+//     // Sepeti gösterme
+//     function showCart() {
+//         cart.innerHTML = '';
+//         let totalPrice = 0;
 
-        cartItems.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.innerText = `${item.name}: $${item.price}`;
-            listItem.classList.add('list-group-item');
-            cart.appendChild(listItem);
+//         cartItems.forEach(item => {
+//             const listItem = document.createElement('li');
+//             listItem.innerText = `${item.name}: $${item.price}`;
+//             listItem.classList.add('list-group-item');
+//             cart.appendChild(listItem);
 
-            totalPrice += item.price;
-        });
+//             totalPrice += item.price;
+//         });
 
-        total.innerText = `Toplam: $${totalPrice.toFixed(2)}`;
-    }
+//         total.innerText = `Toplam: $${totalPrice.toFixed(2)}`;
+//     }
 
-    // Sepeti temizleme
-    clearCartButton.addEventListener('click', () => {
-        cartItems = [];
-        showCart();
-    });
-});
+//     // Sepeti temizleme
+//     clearCartButton.addEventListener('click', () => {
+//         cartItems = [];
+//         showCart();
+//     });
+// });
