@@ -133,6 +133,9 @@ searchBtn.addEventListener('click', function () {
 //! yeni sepet 
 
 const span = document.querySelector('#span')
+span.style.top = '15px'
+span.style.padding = '10px 10px'
+span.style.position = 'absolute'
 
 let sepet = []
 
