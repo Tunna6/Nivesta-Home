@@ -204,12 +204,13 @@ button:focus {
 /* main */
 
 
-.container {
+main .container {
     margin-left: 140px;
 
     background-image: url(./img/pngtree-turquoise-textile-in-3d-a-stunning-square-rendering-image_3641946.jpg);
     /* background-repeat: no-repeat; */
 
+    margin-bottom: 20px;
 }
 
 .hakkımızda-div {

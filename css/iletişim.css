@@ -11,21 +11,21 @@ body{
 }
 
 main{
-    background-color: #1d1b31;
+    background-color:antiquewhite;
 }
 main div i {
-    color: #fff;
+    color: #1d1b31;
 }
 main div p {
-    color: #fff;
+    color: #1d1b31;
 }
 
 section{
-    background-color: #1d1b31;
+    background-color:antiquewhite;
 }
 
 section label {
-    color: #fff;
+    color: #1d1b31;
 }
 
 button:focus {

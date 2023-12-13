@@ -206,12 +206,15 @@ if (window.location.href == 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html') {
         // console.log(urun)
 
         const col = document.createElement('div')
-        col.classList.add('col-lg-3', 'col-sm-6', 'col-12', )
+        col.classList.add('col-lg-3', 'col-sm-6', 'col-12')
+        col.style.padding = '20px'
 
         const parentDiv = document.createElement('div')
         parentDiv.style.width = '100%'
-        parentDiv.style.height = '400px'
+        parentDiv.style.height = '420px'
         parentDiv.style.border = "1px solid black"
+        parentDiv.style['boxShadow'] = '0 50px 50px #757676';
+        parentDiv.style['borderRadius'] = '10px';
 
         const imgDiv = document.createElement('div')
         imgDiv.style.width = "100%"
@@ -221,19 +224,23 @@ if (window.location.href == 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html') {
         img.src = urun.fotoğraf
         img.style.width = "100%"
         img.style.height = "100%"
+        img.style['borderRadius'] = '10px 10px 0 0';
 
         const cardBody = document.createElement('div')
         cardBody.style.width = "100%"
         cardBody.style.height = "220px"
+        cardBody.classList.add('ms-1')
 
         const baslik = document.createElement('h5')
         baslik.textContent = urun.isim
 
         const aciklama = document.createElement('p')
-        aciklama.textContent = `${urun.açıklama} - ${urun.fiyat}$`
+        aciklama.textContent = urun.açıklama
+        const aciklama2 = document.createElement('p')
+        aciklama2.textContent = `${urun.fiyat}$`
 
         const btn = document.createElement('button')
-        btn.classList.add('btn', 'btn-dark')
+        btn.classList.add('btn', 'btn-dark', 'm-auto')
         btn.textContent = 'Sepete Ekle'
 
         btn.addEventListener('click', () => {
@@ -271,6 +278,7 @@ if (window.location.href == 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html') {
 
         cardBody.append(baslik)
         cardBody.append(aciklama)
+        cardBody.append(aciklama2)
         cardBody.append(btn)
 
         imgDiv.append(img)

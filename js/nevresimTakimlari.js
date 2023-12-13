@@ -113,11 +113,14 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
 
         const col = document.createElement('div')
         col.classList.add('col-lg-3', 'col-sm-6', 'col-12', )
+        col.style.padding = '20px'
 
         const parentDiv = document.createElement('div')
         parentDiv.style.width = '100%'
         parentDiv.style.height = '400px'
         parentDiv.style.border = "1px solid black"
+        parentDiv.style['boxShadow'] = '0 50px 50px #757676';
+        parentDiv.style['borderRadius'] = '10px';
 
         const imgDiv = document.createElement('div')
         imgDiv.style.width = "100%"
@@ -127,6 +130,7 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
         img.src = urun.fotoğraf
         img.style.width = "100%"
         img.style.height = "100%"
+        img.style['borderRadius'] = '10px 10px 0 0';
 
         const cardBody = document.createElement('div')
         cardBody.style.width = "100%"
