@@ -45,42 +45,42 @@ let urunler = [
         "isim": "Sultan Çift Kişilik Jakarlı Saten Nevresim Takımı - Pudra",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 199.99,
-        "fotoğraf": ".css/img/Nevresim/sultan-pudra.webp",
+        "fotoğraf": "./css/img/Nevresim/sultan-pudra.webp",
         "stok": 75
     },
     {
         "isim": "Saray Çift Kişilik Jakarlı Saten Nevresim Takımı - Pudra",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 199.99,
-        "fotoğraf": ".css/img/Nevresim/saray-pudra.webp",
+        "fotoğraf": "./css/img/Nevresim/saray-pudra.webp",
         "stok": 75
     },
     {
         "isim": "Nilüfer Çift Kişilik Jakarlı Saten Nevresim Takımı - Bej",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 199.99,
-        "fotoğraf": ".css/img/Nevresim/nilüfer-bej.webp",
+        "fotoğraf": "./css/img/Nevresim/nilüfer-bej.webp",
         "stok": 75
     },
     {
         "isim": "Latanya Çift Kişilik Jakarlı Saten Nevresim Takımı - Bej",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 199.99,
-        "fotoğraf": ".css/img/Nevresim/latanya-bej.webp",
+        "fotoğraf": "./css/img/Nevresim/latanya-bej.webp",
         "stok": 75
     },
     {
         "isim": "Sultan Çift Kişilik Jakarlı Saten Nevresim Takımı - Bej",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 199.99,
-        "fotoğraf": ".css/img/Nevresim/sultan-bej.webp",
+        "fotoğraf": "./css/img/Nevresim/sultan-bej.webp",
         "stok": 75
     },
     {
         "isim": "Saray Çift Kişilik Jakarlı Saten Nevresim Takımı - Bej",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 199.99,
-        "fotoğraf": ".css/img/Nevresim/saray-bej.webp",
+        "fotoğraf": "./css/img/Nevresim/saray-bej.webp",
         "stok": 75
     },
 ]
