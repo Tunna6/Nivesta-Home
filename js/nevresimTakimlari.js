@@ -6,7 +6,7 @@ let searchBtn = document.querySelector('.bx-search')
 let tooltips = document.querySelectorAll('.toooltip')
 console.log(tooltips);
 
-btn.addEventListener('click', function() {
+btn.addEventListener('click', function () {
     sidebar.classList.toggle('aktif');
     if (sidebar.classList.contains('aktif')) {
         tooltips.forEach(tool => {
@@ -14,14 +14,14 @@ btn.addEventListener('click', function() {
             tool.style.display = 'none';
         })
     } else {
-            tooltips.forEach(tool => {
-                console.log(tool);
-                tool.style.display = 'block';
-            })
+        tooltips.forEach(tool => {
+            console.log(tool);
+            tool.style.display = 'block';
+        })
     }
 });
 
-searchBtn.addEventListener('click', function() {
+searchBtn.addEventListener('click', function () {
     sidebar.classList.toggle('aktif');
     if (sidebar.classList.contains('aktif')) {
         tooltips.forEach(tool => {
@@ -29,11 +29,11 @@ searchBtn.addEventListener('click', function() {
             tool.style.display = 'none';
         })
     } else {
-            tooltips.forEach(tool => {
-                console.log(tool);
-                tool.style.display = 'block';
-            })
-        }
+        tooltips.forEach(tool => {
+            console.log(tool);
+            tool.style.display = 'block';
+        })
+    }
 });
 
 //! sepett
@@ -61,7 +61,7 @@ if (localItem) {
 
 
 
-} 
+}
 
 console.log(window.location.href)
 console.log(sepet.length)
@@ -69,38 +69,38 @@ console.log(sepet.length)
 if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
     const row = document.querySelector('.row')
 
-   // !! arama butonu
+    // !! arama butonu
 
-//    const input = document.getElementById('input')
+    //    const input = document.getElementById('input')
 
-//    input.addEventListener('input', (e) => {
-//         console.log(e.target.value.toLowerCase());   
-//         let kullanıcıDeger = e.target.value.toLowerCase()
+    //    input.addEventListener('input', (e) => {
+    //         console.log(e.target.value.toLowerCase());   
+    //         let kullanıcıDeger = e.target.value.toLowerCase()
 
-//         const col = document.querySelectorAll('.col-12')
+    //         const col = document.querySelectorAll('.col-12')
 
-//         for (let i = 0; i < col.length; i++) {
-//             // console.log([i].firstChild.firstChild.nextSibling.firstChild.textContent);
-//             let urunAdı = col[i].firstChild.firstChild.nextSibling.firstChild.textContent.toLowerCase()
+    //         for (let i = 0; i < col.length; i++) {
+    //             // console.log([i].firstChild.firstChild.nextSibling.firstChild.textContent);
+    //             let urunAdı = col[i].firstChild.firstChild.nextSibling.firstChild.textContent.toLowerCase()
 
-//             let urunAcıklama = col[i].firstChild.firstChild.nextSibling.firstChild.nextSibling.textContent.toLocaleLowerCase()
+    //             let urunAcıklama = col[i].firstChild.firstChild.nextSibling.firstChild.nextSibling.textContent.toLocaleLowerCase()
 
-//             console.log(urunAdı.indexOf(kullanıcıDeger));
-           
-//             if (urunAdı.indexOf(kullanıcıDeger) != -1  || urunAcıklama.indexOf(kullanıcıDeger) != -1) {
-//                 col[i].style.display = 'flex'
-//             } else {
-//                 col[i].style.display = 'none'
-//             }
-//         }
+    //             console.log(urunAdı.indexOf(kullanıcıDeger));
+
+    //             if (urunAdı.indexOf(kullanıcıDeger) != -1  || urunAcıklama.indexOf(kullanıcıDeger) != -1) {
+    //                 col[i].style.display = 'flex'
+    //             } else {
+    //                 col[i].style.display = 'none'
+    //             }
+    //         }
 
 
 
-        
-//         // let urunler = urunler.filter((urun) => {
-//         //     return urun.isim.toLowerCase().includes(kullanıcıDeger)
-//         // })
-//    })
+
+    //         // let urunler = urunler.filter((urun) => {
+    //         //     return urun.isim.toLowerCase().includes(kullanıcıDeger)
+    //         // })
+    //    })
 
 
     urunler.forEach((urun) => {
@@ -112,12 +112,14 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
         // console.log(urun)
 
         const col = document.createElement('div')
-        col.classList.add('col-lg-3', 'col-sm-6', 'col-12', )
-        col.style.padding = '20px'
+        col.classList.add('col-lg-3', 'col-sm-6', 'col-12',)
+        span.style.top = '15px'
+        span.style.padding = '10px 10px'
+        span.style.position = 'absolute'
 
         const parentDiv = document.createElement('div')
         parentDiv.style.width = '100%'
-        parentDiv.style.height = '400px'
+        parentDiv.style.height = '440px'
         parentDiv.style.border = "1px solid black"
         parentDiv.style['boxShadow'] = '0 50px 50px #757676';
         parentDiv.style['borderRadius'] = '10px';
@@ -140,7 +142,10 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
         baslik.textContent = urun.isim
 
         const aciklama = document.createElement('p')
-        aciklama.textContent = `${urun.açıklama} - ${urun.fiyat}$`
+        aciklama.textContent = urun.açıklama
+
+        const aciklama2 = document.createElement('p')
+        aciklama2.textContent = `${urun.fiyat}$`
 
         const btn = document.createElement('button')
         btn.classList.add('btn', 'btn-dark')
@@ -181,6 +186,7 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
 
         cardBody.append(baslik)
         cardBody.append(aciklama)
+        cardBody.append(aciklama2)
         cardBody.append(btn)
 
         imgDiv.append(img)
@@ -270,21 +276,21 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
                     })
                     if (sepet.length == 0) {
                         span.textContent = ''
-                    }else {
+                    } else {
                         span.textContent = toplam
                     }
                 }
                 if (sepet.length == 0) {
                     const h4 = document.createElement('h4')
                     h4.textContent = 'Sepetinizde ürün bırakmadınız...'
-            
+
                     container.append(h4)
                     container.removeChild(hr)
                 }
                 let toplamSepetFiyatı = 0
                 sepet.forEach((e) => {
-                toplamSepetFiyatı += e.fiyat * e.quantity
-                sepetFiyat.textContent = toplamSepetFiyatı.toFixed(2)
+                    toplamSepetFiyatı += e.fiyat * e.quantity
+                    sepetFiyat.textContent = toplamSepetFiyatı.toFixed(2)
                 })
             })
 
@@ -305,12 +311,12 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
                 // price.textContent = urun.fiyat
                 let toplamSepetFiyatı = 0
                 sepet.forEach((e) => {
-                toplamSepetFiyatı += e.fiyat * e.quantity
-                sepetFiyat.textContent = toplamSepetFiyatı.toFixed(2)
+                    toplamSepetFiyatı += e.fiyat * e.quantity
+                    sepetFiyat.textContent = toplamSepetFiyatı.toFixed(2)
                 })
 
             })
-            
+
 
             imgDiv.append(img)
 
@@ -341,8 +347,8 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
 
         let toplamSepetFiyatı = 0
         sepet.forEach((e) => {
-        toplamSepetFiyatı += e.fiyat * e.quantity
-        sepetFiyat.textContent = toplamSepetFiyatı.toFixed(2)
+            toplamSepetFiyatı += e.fiyat * e.quantity
+            sepetFiyat.textContent = toplamSepetFiyatı.toFixed(2)
         })
 
         const sepetBtn = document.createElement('btn')
