@@ -163,7 +163,7 @@ if (localItem) {
 console.log(window.location.href)
 console.log(sepet.length)
 
-if (window.location.href == 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html') {
+if (window.location.href == 'https://tunna6.github.io/Nivesta-Home/pikeTak%C4%B1mlari.html') {
     const row = document.querySelector('.row')
 
    // !! arama butonu
@@ -294,7 +294,7 @@ if (window.location.href == 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html') {
         row.append(col)
 
     })
-} else if (window.location.href == 'http://127.0.0.1:5500/sepet.html') {
+} else if (window.location.href == 'https://tunna6.github.io/Nivesta-Home/sepet.html') {
     const container = document.querySelector('.container')
 
     if (sepet.length == 0) {
@@ -451,7 +451,7 @@ if (window.location.href == 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html') {
         sepetBtn.textContent = 'Satın al'
         sepetBtn.addEventListener('click', () => {
             localStorage.setItem('sepet', JSON.stringify(sepet))
-            window.location.href = 'http://127.0.0.1:5500/pikeTak%C4%B1mlari.html'
+            window.location.href = 'https://tunna6.github.io/Nivesta-Home/pikeTak%C4%B1mlari.html'
         })
 
         fiyatDiv.append(sepetFiyat)

@@ -66,7 +66,7 @@ if (localItem) {
 console.log(window.location.href)
 console.log(sepet.length)
 
-if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
+if (window.location.href == 'https://tunna6.github.io/Nivesta-Home/nevresimTakimlari.html') {
     const row = document.querySelector('.row')
 
     // !! arama butonu
@@ -199,7 +199,7 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
         row.append(col)
 
     })
-} else if (window.location.href == 'http://127.0.0.1:5500/sepet.html') {
+} else if (window.location.href == 'https://tunna6.github.io/Nivesta-Home/sepet.html') {
     const container = document.querySelector('.container')
 
     if (sepet.length == 0) {
@@ -356,7 +356,7 @@ if (window.location.href == 'http://127.0.0.1:5500/nevresimTakimlari.html') {
         sepetBtn.textContent = 'Satın al'
         sepetBtn.addEventListener('click', () => {
             localStorage.setItem('sepet', JSON.stringify(sepet))
-            window.location.href = 'http://127.0.0.1:5500/nevresimTakimlari.html'
+            window.location.href = 'https://tunna6.github.io/Nivesta-Home/nevresimTakimlari.html'
         })
 
         fiyatDiv.append(sepetFiyat)
