@@ -3,14 +3,14 @@ let urunler = [
         "isim": "Nilüfer Çift Kişilik Jakarlı Saten Nevresim Takımı - Krem",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 79.99,
-        "fotoğraf": "..css/img/Nevresim/nilüfer.webp",
+        "fotoğraf": ".css/img/Nevresim/nilüfer.webp",
         "stok": 150
     },
     {
         "isim": "Saray Çift Kişilik Jakarlı Saten Nevresim Takımı - Krem",
         "açıklama": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "fiyat": 129.99,
-        "fotoğraf": "..css/img/Nevresim/saray.webp",
+        "fotoğraf": ".css/img/Nevresim/saray.webp",
         "stok": 100
     },
     {
